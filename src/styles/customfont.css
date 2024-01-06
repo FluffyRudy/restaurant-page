@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'hoverFont';
+    src: url('../assets/fonts/lemon-drop.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'defaultFont';
+    src: url('../assets/fonts/chrusty-rock.ttf');
+    font-style: normal;
+}
