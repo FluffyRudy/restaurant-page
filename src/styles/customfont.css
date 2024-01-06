@@ -9,3 +9,9 @@
     src: url('../assets/fonts/chrusty-rock.ttf');
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'paraFont';
+    src: url('../assets/fonts/poppins.otf');
+    font-style: normal;
+}
