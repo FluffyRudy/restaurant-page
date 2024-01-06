@@ -1,8 +1,7 @@
 import "../styles/navigation.css";
 
-function createAnchor(label, redirect) {
-    const anchor = document.createElement('a');
-    anchor.href  = redirect;
+function createAnchor(label) {
+    const anchor = document.createElement('button');
     anchor.textContent = label;
     return anchor;
 }
@@ -14,7 +13,7 @@ function createNavigationBar(navData) {
     
     navData.forEach(elem => {
         const li     = document.createElement("li");
-        const anchor = createAnchor(elem.label, elem.redirect);
+        const anchor = createAnchor(elem.label);
         li.appendChild(anchor);
         listUL.appendChild(li);
     })
@@ -29,15 +28,15 @@ function createNavigationBar(navData) {
 const navData = [
     {
         label: 'Home',
-        redirect: '#',
+        id: "label"
     },
     {
         label: 'Menu',
-        redirect: '#'
+        id: "menu"
     },
     {
         label: 'Contact',
-        redirect: '#'
+        id: "contact"
     }
 ];
 
