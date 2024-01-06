@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'hoverFont';
+    src: url('../assets/fonts/lemon-drop.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'defaultFont';
+    src: url('../assets/fonts/chrusty-rock.ttf');
+    font-style: normal;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    padding: 20px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: goldenrod;
+    font-family: 'defaultFont';
+    font-size: 32px;
+}
+
+a:focus {
+    color: lime;
+    border-radius: 10px;
+    font-family: 'hoverFont';
+    font-size: 42px;
+}
