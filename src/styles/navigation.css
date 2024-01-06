@@ -1,16 +1,3 @@
-@font-face {
-    font-family: 'hoverFont';
-    src: url('../assets/fonts/lemon-drop.otf');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'defaultFont';
-    src: url('../assets/fonts/chrusty-rock.ttf');
-    font-style: normal;
-}
-
-
 ul {
     list-style: none;
     display: flex;
@@ -18,19 +5,27 @@ ul {
 }
 
 li {
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
-a {
-    text-decoration: none;
-    color: goldenrod;
+button {
+    background-color: transparent;
+    border: none;
+    color: tomato;
     font-family: 'defaultFont';
     font-size: 32px;
+    cursor: pointer;
 }
 
-a:focus {
+button:focus {
     color: lime;
     border-radius: 10px;
     font-family: 'hoverFont';
     font-size: 42px;
+}
+
+header {
+    margin: auto;
+    width: min(100vw, 700px);
+    height: 10vh;
 }
