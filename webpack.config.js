@@ -12,7 +12,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Fluffy Restaurent'
+            title: 'Fluffy Restaurent',
+            template: './src/index.html'
         })
     ],
     output: {
@@ -23,7 +24,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|svg|jpg|gif)$/i,
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
             },
             {
