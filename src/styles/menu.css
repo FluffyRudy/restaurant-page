@@ -1,0 +1,36 @@
+#menu-container {
+    margin: auto;
+    font-family: "paraFont";
+    width: min(900px, 95%);
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 20px 0;
+    gap: 1vmax;
+}
+
+.card #course-div {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.card #course-div h2 {
+    margin-top: 0;
+}
+
+.card #course-div, .card table {
+    flex: 1;
+    width: 0;
+    border-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}

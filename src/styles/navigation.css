@@ -19,7 +19,6 @@ button {
 
 button:focus {
     color: lime;
-    border-radius: 10px;
     font-family: 'hoverFont';
     font-size: 42px;
 }

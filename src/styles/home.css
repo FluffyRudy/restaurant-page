@@ -26,18 +26,14 @@
     font-weight: bolder;
 }
 
-table {
+#hours-table {
     width: 85%;
     margin: 10px auto 20px auto;
-    color: rgba(227, 106, 182, 0.8);
-    font-family: 'defaultFont';
-    background-color: rgba(0, 0, 0, 0.5);
-    border-collapse: collapse;
     font-size: 20px;
+    font-family: "defaultFont";
     border-radius: 10px;
-    text-align: left;
 }
 
-td, th {
+#hours-table td, #hours-table th {
     padding: 2vmax;
 }
