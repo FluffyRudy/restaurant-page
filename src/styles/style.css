@@ -10,9 +10,21 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 table {
     color: rgba(227, 106, 182, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
     border-collapse: collapse;
     text-align: left;
+}
+
+
+.btn-clicked {
+    color: lime;
+    font-family: 'hoverFont';
+    font-size: 42px;
 }
