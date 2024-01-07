@@ -3,6 +3,7 @@ import './styles/customfont.css';
 import { header } from  "./shared/navigation";
 import { homePage } from "./pages/home";
 import { menuPage } from "./pages/menu";
+import { contactPage } from "./pages/contact";
 
 const container = document.getElementById("content");
 const [homeLink, menuLink, contactLink] = header.querySelectorAll("button");
@@ -20,15 +21,27 @@ function clearPage() {
 }
 
 function renderPage(page) {
-    return function() { 
+    return function(e=undefined) {
+        if (e)
+            highlightCurrentTab(e.target);
         clearPage();
         loadPage(page);
     }
 }
 
+function highlightCurrentTab(target) {
+   target.classList.add('btn-clicked');
+   [homeLink, menuLink, contactLink].forEach(elem => {
+    if (elem != target)
+        elem.classList.remove('btn-clicked');
+   })
+}
+
 window.onload = () => {
     renderPage(homePage)();
+    homeLink.classList.add('btn-clicked');
 }
 
 homeLink.addEventListener('click', renderPage(homePage));
 menuLink.addEventListener('click', renderPage(menuPage));
+contactLink.addEventListener('click', renderPage(contactPage));
