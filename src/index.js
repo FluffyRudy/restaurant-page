@@ -2,8 +2,10 @@ import "./styles/style.css";
 import './styles/customfont.css';
 import { header } from  "./shared/navigation";
 import { homePage } from "./pages/home";
+import { menuPage } from "./pages/menu";
 
 const container = document.getElementById("content");
+const [homeLink, menuLink, contactLink] = header.querySelectorAll("button");
 
 document.body.insertBefore(header, container);
 
@@ -17,8 +19,16 @@ function clearPage() {
     }
 }
 
-window.onload = () => {
-    loadPage(homePage);
+function renderPage(page) {
+    return function() { 
+        clearPage();
+        loadPage(page);
+    }
 }
 
-  
+window.onload = () => {
+    renderPage(homePage)();
+}
+
+homeLink.addEventListener('click', renderPage(homePage));
+menuLink.addEventListener('click', renderPage(menuPage));
