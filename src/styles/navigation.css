@@ -17,12 +17,6 @@ button {
     cursor: pointer;
 }
 
-button:focus {
-    color: lime;
-    font-family: 'hoverFont';
-    font-size: 42px;
-}
-
 header {
     margin: auto;
     width: min(100vw, 700px);
