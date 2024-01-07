@@ -28,7 +28,7 @@ function createNavigationBar(navData) {
 const navData = [
     {
         label: 'Home',
-        id: "label"
+        id: "home"
     },
     {
         label: 'Menu',
