@@ -44,8 +44,6 @@ function createMenuCard(foodType, img, shuffle=false) {
         card.appendChild(foodInfoTable);
     }
 
-    console.log(foodCourseDiv)
-
     return card;
 }
 
