@@ -22,6 +22,12 @@ function clearPage() {
 
 function renderPage(page) {
     return function(e=undefined) {
+        if (container.children[0]) {
+            if (container.children[0].getAttribute("id") == page.getAttribute("id")) {
+                return;
+            }
+        }
+        
         if (e)
             highlightCurrentTab(e.target);
         clearPage();
